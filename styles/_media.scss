@@ -1,0 +1,247 @@
+
+
+@media screen and (max-width: 1200px) {
+    // .wrapper {
+    //     padding: 0 15%;
+    // }
+    nav {
+        ul {
+            flex-wrap: wrap;
+            li {
+                padding: .6rem 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .sec-1 {
+        .bio {
+            h1 {
+                font-size: 5rem;
+            }
+            p {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 2200px) {
+    .sec-1 {
+        .pfp-wrapper {
+            img {
+                transform: scale(1.8);
+            }
+            margin-right: 5rem;
+            margin-top: 4rem;
+        }
+    }
+    html {
+        font-size: 1.9rem;
+    }
+    .buttons {
+        #dark-mode {
+            font-size: 1rem;
+        }
+        button {
+            margin-right: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .sec-1 {
+        .pfp-wrapper {
+            img {
+                width: 180px;
+                height: 180px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    nav {
+        padding-bottom: .3rem !important;
+        border-bottom: 1px solid var(--green);
+        position: relative;
+        .buttons {
+            margin-top: .3rem;
+        }
+        .navbar-name {
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            top: 10px;
+        }
+        align-items: flex-end;
+        justify-content: flex-end;
+        padding: 0;
+        ul {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        padding: 0 10%;
+    }
+    .sec-6 {
+        a {
+            font-size: .8rem;
+        }
+    }
+    section {
+        h1 {
+            font-size: 1.8rem;
+        }
+    }
+    footer {
+        h1 {
+            font-size: 1.8rem;
+        }
+    }
+    .line-left {
+        right: 6%;
+    }
+    .line-right {
+        left: 6%;
+    }
+    .neon-button {
+        transform: scale(.8);
+        margin: 0 .9rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .sec-1 {
+        .pfp-wrapper {
+            img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .navbar-name {
+        font-size: 1.3rem;
+        margin-top: .5rem;
+    }
+    .sec-1 {
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        .bio {
+            h1 {
+                font-size: 2.3rem;
+            }
+            p {
+                font-size: .8rem;
+                a {
+                    letter-spacing: 0;
+                    position: absolute;
+                    width: 80%;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+        img {
+            transform: scale(.8);
+        }
+    }
+
+    .sec-2 {
+        margin-top: 1.5rem;
+        .skills-div {
+            margin-top: .4rem;
+            p {
+                font-size: 1.3rem;
+            }
+        }
+    }
+    section {
+        .experience-div {
+            margin-top: -.5rem;
+            .card-wrapper {
+                .card {
+                    margin: .5rem 0;
+                    img {
+                        transform: scale(.8);
+                    }
+                    .info {
+                        h3 {
+
+                            font-size: 1rem;
+                        }
+                        p {
+                            font-size: .7rem;
+                        }
+                        h4 {
+                            font-size: .8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .sec-5 {
+        .languages-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0;
+        border-radius: 5px;
+        }
+    }
+    
+    .sec-6 {
+        font-size: .9rem;
+        .project-container {
+            .project-div {
+                margin-bottom: 3rem;
+                &:last-child {
+                    margin-bottom: 1.2rem;
+                }
+            }
+        }
+    }
+
+    .neon-button {
+        margin: 0 .9rem;
+    }
+    .wrapper {
+        padding: 0 8%;
+    }
+    section {
+        h1 {
+            font-size: 1.6rem;
+        }
+    }
+    footer {
+        h1 {
+            font-size: 1.8rem;
+        }
+    }
+    .line-left {
+        right: .3px;
+        width: 3px;
+    }
+    .line-right {
+        left: 0;
+        width: 3px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .sec-2 {
+        margin-top: 3rem;
+    }
+    .wrapper {
+        padding: 0 5%;
+    }
+    .neon-button {
+        margin: 0 .3rem;
+    }
+}
