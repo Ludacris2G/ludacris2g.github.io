@@ -3,6 +3,9 @@ const darkModeBtn = document.querySelector('#dark-mode');
 const linkedinText = document.getElementById('email').innerText;
 // const scrollToTop 
 
+const scrollToTop = () => {
+  window.scrollTo(0, 0);
+};
 
 const copyContent = async () => {
     try {
@@ -20,7 +23,6 @@ buttons.forEach((button) => {
     button.classList.add("active");
     setTimeout(() => {
       button.classList.remove("active");
-      
     }, 500);
   });
 });
@@ -37,3 +39,7 @@ darkModeBtn.addEventListener('click', function() {
     sun.classList.toggle('sun');
     moon.classList.toggle('moon');
 })
+
+document.onload = () => {
+  scrollToTop();
+}
