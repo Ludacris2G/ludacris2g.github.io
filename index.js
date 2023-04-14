@@ -3,9 +3,9 @@ const darkModeBtn = document.querySelector('#dark-mode');
 const linkedinText = document.getElementById('email').innerText;
 // const scrollToTop 
 
-const scrollToTop = () => {
-  window.scrollTo(0, 0);
-};
+// const scrollToTop = () => {
+//   window.scrollTo(0, 0);
+// };
 
 const copyContent = async () => {
     try {
@@ -40,6 +40,6 @@ darkModeBtn.addEventListener('click', function() {
     moon.classList.toggle('moon');
 })
 
-document.onload = () => {
-  scrollToTop();
-}
+// document.onload = () => {
+//   scrollToTop();
+// }
