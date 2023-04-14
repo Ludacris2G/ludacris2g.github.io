@@ -34,6 +34,7 @@ body {
   font-family: "Sono", sans-serif;
   overflow-x: hidden;
   transition: var(--transition);
+  height: 100%;
 }
 
 .wrapper {
@@ -323,11 +324,10 @@ section .experience-div .card-wrapper:hover:after {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 1rem;
 }
 .sec-6 .project-container .project-div {
   box-shadow: var(--green) 0px 3px 15px 0px;
-  margin-bottom: 5rem;
+  margin-top: 3rem;
   border-radius: 0.5rem;
   transition: all 0.3s ease-in-out;
 }
