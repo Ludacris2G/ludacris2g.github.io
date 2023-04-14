@@ -23,7 +23,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: unset;
   margin: 0;
   padding: 0;
 }
