@@ -43,3 +43,7 @@ darkModeBtn.addEventListener('click', function() {
 // document.onload = () => {
 //   scrollToTop();
 // }
+
+window.onload = function() {
+  window.scrollTo(0, 0);
+}
