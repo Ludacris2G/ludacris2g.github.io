@@ -137,6 +137,7 @@ input.addEventListener('keyup', function(e) {
 
 searchBtn.addEventListener('click', () => {
     if (filterInput(input.value)) return displayWeather();
+    window.scrollTo(0, 0);
 })
 
 function displayWeather() {
