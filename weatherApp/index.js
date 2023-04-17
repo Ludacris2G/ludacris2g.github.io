@@ -15,7 +15,7 @@ const feelsLike = document.querySelector('.feels-like');
 const weather = {
     fetchLocation: function(cityName) {
         fetch(
-            `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&appid=${weatherApiKey}`
+            `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&appid=${weatherApiKey}`
         )
         .then((response) => response.json())
         .then((data) => this.fetchWeather(data[0]))
