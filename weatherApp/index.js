@@ -14,19 +14,25 @@ const feelsLike = document.querySelector('.feels-like');
 
 const weather = {
     fetchLocation: function(cityName) {
-        fetch(
-            `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&appid=${weatherApiKey}`
-        )
-        .then((response) => response.json())
-        .then((data) => this.fetchWeather(data[0]))
+        // fetch(
+        //     `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&appid=${weatherApiKey}`
+        // )
+        // .then((response) => response.json())
+        // .then((data) => this.fetchWeather(data[0]))
 
+        fetch(
+            `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${weatherApiKey}`
+        )
+        .then(response => response.json())
+        .then((data) => this.fetchWeather(data))
         displayLocation.textContent = cityName;
     },
     fetchWeather: function(data) {
+        console.log(data);
         let lat, lon;
         try {
-            lat = data.lat;
-            lon = data.lon;
+            lat = data.coord.lat;
+            lon = data.coord.lon;
             this.fetchTime(parseInt(lon), parseInt(lat));
             weather.fetchImage(input.value);
         } catch (error) {
