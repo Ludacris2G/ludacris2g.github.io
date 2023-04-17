@@ -14,12 +14,6 @@ const feelsLike = document.querySelector('.feels-like');
 
 const weather = {
     fetchLocation: function(cityName) {
-        // fetch(
-        //     `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&appid=${weatherApiKey}`
-        // )
-        // .then((response) => response.json())
-        // .then((data) => this.fetchWeather(data[0]))
-
         fetch(
             `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${weatherApiKey}`
         )
@@ -28,7 +22,7 @@ const weather = {
         displayLocation.textContent = cityName;
     },
     fetchWeather: function(data) {
-        console.log(data);
+        // console.log(data);
         let lat, lon;
         try {
             lat = data.coord.lat;
@@ -48,7 +42,7 @@ const weather = {
     },
     displayWeatherStats: function(data) {
         // data values
-        console.log(data);
+        // console.log(data);
         const { description, icon } = data.weather[0];
         const { speed } = data.wind;
         const { humidity, temp, feels_like } = data.main;
@@ -61,7 +55,7 @@ const weather = {
         input.value = '';
         displayHumidity.textContent = 'Humidity: ' + humidity + '%';
         displayIcon.src = `https://openweathermap.org/img/wn/${icon}@2x.png`;
-        console.log(feels_like);
+        // console.log(feels_like);
         if (Math.floor(Math.abs(feels_like - temp)) > 1) {
             feelsLike.style.display = 'block';
             feelsLike.textContent = 'Feels like: ' + Math.trunc(feels_like);
@@ -115,14 +109,14 @@ const weather = {
         .then((data) => this.displayImage(data.photos));
     },
     displayImage: function(data) {
-        console.log(data);
+        // console.log(data);
         const random = Math.floor(Math.random() * data.length);  
         if (screen.width < 769) {
             document.body.style.backgroundImage = `url("${data[random].src.portrait}")`;
         } else {
             document.body.style.backgroundImage = `url("${data[random].src.landscape}")`;
         }
-        console.log(data[random].src.portrait);
+        // console.log(data[random].src.portrait);
     
         //document.body.style.backgroundImage = `url("${data[random].src.portrait}")`;
         // htmlIcon.src = data[random].src.landscape;
