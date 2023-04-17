@@ -1,0 +1,3 @@
+[submodule "/weatherApp"] 
+  path = path_to_submodule 
+  url = https://github.com/Ludacris2G/ludacris2g.github.io.git
