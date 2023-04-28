@@ -1,7 +1,7 @@
 // COLOR VARIABLES
 $green: #7aea29; 
 $white: #ffffff; 
-$background-black: #281a1a;
+$background-black: #121212;
 $button-background: #1e1e1e;
 $gray: #b6b6b6;
 $transition: all .3s ease-in-out;
@@ -330,6 +330,10 @@ section {
                 position: absolute;
                 top: 27%;
                 transition: all .15s ease-in-out;
+            }
+            img {
+                width: 30px;
+                height: 30px;
             }
             &:hover {
                 i {
