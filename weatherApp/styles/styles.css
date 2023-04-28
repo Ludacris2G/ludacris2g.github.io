@@ -13,6 +13,7 @@ body {
   font-family: "Montserrat", sans-serif;
   background-size: cover;
   transition: all 0.4s ease-in-out;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -152,6 +153,9 @@ a:hover {
   }
   a {
     font-size: 0.5rem;
+  }
+  body {
+    height: 100vh;
   }
 }
 @media screen and (min-width: 2000px) {

@@ -1,0 +1,16 @@
+{
+  "folders": [
+	{
+		"path": "../.."
+	},
+	{
+		"path": "../../react/youtube"
+	},
+	{
+		"path": "../../../git-new-era"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "dev"
+  }
+}

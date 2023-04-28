@@ -13,6 +13,7 @@ $transition: all .3s ease-in-out;
     --button-background: #{$button-background};
     --gray: #{$gray};
     --transition: #{$transition};
+    scroll-behavior: smooth;
 }
 
 .light-mode {

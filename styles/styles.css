@@ -5,6 +5,7 @@
   --button-background: #1e1e1e;
   --gray: #b6b6b6;
   --transition: all 0.3s ease-in-out;
+  scroll-behavior: smooth;
 }
 
 .light-mode {
@@ -23,7 +24,7 @@
 }
 
 html {
-  scroll-behavior: unset;
+  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
 }
