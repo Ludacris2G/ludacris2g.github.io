@@ -598,6 +598,13 @@ footer .footer-flex-container .contact-icons span span {
   }
 }
 @media screen and (max-width: 768px) {
+  .sec-2 .skills-div {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .sec-2 .skills-div img {
+    width: 45px;
+    height: 45px;
+  }
   .wrapper {
     padding: 0 10%;
   }
