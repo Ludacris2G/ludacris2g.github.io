@@ -313,8 +313,18 @@ section {
 
 .sec-2 {
     .skills-div {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(4, 1fr);
+        padding-top: 20px;
+        img {
+            width: 60px;
+            height: 60px;
+            justify-self: center;
+        }
+        .github-img {
+            filter: invert(100%);
+        }
         p {
             border-bottom: 1px solid var(--green);
             padding: .5rem 0;
@@ -330,10 +340,6 @@ section {
                 position: absolute;
                 top: 27%;
                 transition: all .15s ease-in-out;
-            }
-            img {
-                width: 30px;
-                height: 30px;
             }
             &:hover {
                 i {

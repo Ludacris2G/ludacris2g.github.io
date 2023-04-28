@@ -241,8 +241,18 @@ section .experience-div .card-wrapper:hover:after {
 }
 
 .sec-2 .skills-div {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  padding-top: 20px;
+}
+.sec-2 .skills-div img {
+  width: 60px;
+  height: 60px;
+  justify-self: center;
+}
+.sec-2 .skills-div .github-img {
+  filter: invert(100%);
 }
 .sec-2 .skills-div p {
   border-bottom: 1px solid var(--green);
@@ -262,10 +272,6 @@ section .experience-div .card-wrapper:hover:after {
   position: absolute;
   top: 27%;
   transition: all 0.15s ease-in-out;
-}
-.sec-2 .skills-div p img {
-  width: 30px;
-  height: 30px;
 }
 .sec-2 .skills-div p:hover i {
   margin-left: 0.5rem;
