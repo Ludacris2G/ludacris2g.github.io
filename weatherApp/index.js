@@ -1,4 +1,4 @@
-const weatherApiKey = process.env.WEATHER_KEY;
+const weatherApiKey = 'f47757ae44efb23112754f5207b23479';
 const displayTemp = document.querySelector('.temperature');
 const displayDescription = document.querySelector('.description'); 
 const displayWind = document.querySelector('.wind');
