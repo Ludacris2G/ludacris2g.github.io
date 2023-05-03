@@ -347,11 +347,6 @@ section .experience-div .card-wrapper:hover:after {
   height: 100%;
   padding: 0.5rem 0.5rem;
 }
-.sec-6 .project-container .project-div .for-link img {
-  height: 240px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
 .sec-6 .project-container .project-div img {
   width: 100%;
   border-radius: 0.5rem;
