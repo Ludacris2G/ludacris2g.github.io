@@ -347,6 +347,12 @@ section .experience-div .card-wrapper:hover:after {
   height: 100%;
   padding: 0.5rem 0.5rem;
 }
+.sec-6 .project-container .project-div .project-text {
+  padding: 6px 6px;
+}
+.sec-6 .project-container .project-div .project-text p {
+  margin-top: 8px;
+}
 .sec-6 .project-container .project-div img {
   width: 100%;
   border-radius: 0.5rem;
