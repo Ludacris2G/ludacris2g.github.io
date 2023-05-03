@@ -208,8 +208,10 @@
     .sec-6 {
         font-size: .9rem;
         .project-container {
+            margin-top: 1.5rem;
             .project-div {
                 margin-bottom: 3rem;
+                margin-top: 0;
                 &:last-child {
                     margin-bottom: 1.2rem;
                 }
