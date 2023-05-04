@@ -353,7 +353,7 @@ section .experience-div .card-wrapper:hover:after {
   transform: translate(-50%, -50%);
   opacity: 0;
   transition: all 0.3s ease;
-  z-index: 0;
+  z-index: -1;
 }
 .sec-6 .project-container .project-div .links .live-link,
 .sec-6 .project-container .project-div .links .code-link {

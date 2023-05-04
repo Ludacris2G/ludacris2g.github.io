@@ -378,7 +378,7 @@ section {
                 transform: translate(-50%, -50%); 
                 opacity: 0; 
                 transition: all 0.3s ease; 
-                z-index: 0;
+                z-index: -1;
                 .live-link,
                 .code-link {
                     display: inline-block;
