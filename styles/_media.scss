@@ -251,10 +251,13 @@
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 570px) {
     .links {
         display: flex;
         justify-content: center;
+        a {
+            margin: 0 16px !important;
+        }
     }
 }
 
