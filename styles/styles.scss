@@ -269,6 +269,7 @@ section {
             width: 60px;
             height: 60px;
             justify-self: center;
+            object-fit: contain;
         }
         .github-img {
             filter: invert(100%);

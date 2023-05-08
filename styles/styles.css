@@ -250,6 +250,8 @@ section .experience-div .card-wrapper:hover:after {
   width: 60px;
   height: 60px;
   justify-self: center;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .sec-2 .skills-div .github-img {
   filter: invert(100%);
