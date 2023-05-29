@@ -1,3 +1,6 @@
 [submodule "weatherApp"]
     path = weatherApp
     url = https://github.com/Ludacris2G/ludacris2g.github.io.git
+[submodule "submodules/fearow-blast-js"]
+	path = submodules/fearow-blast-js
+	url = https://github.com/Ludacris2G/fearow-blast-js.git
