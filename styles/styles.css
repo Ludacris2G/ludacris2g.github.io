@@ -202,6 +202,7 @@ section .experience-div .card-wrapper:hover:after {
   font-size: 3rem;
 }
 .sec-1 .bio p {
+  margin-top: 1.2rem;
   font-size: 1rem;
 }
 .sec-1 .bio p span {
@@ -225,7 +226,7 @@ section .experience-div .card-wrapper:hover:after {
   transition: all 0.3s ease-in-out;
 }
 .sec-1 .bio .description-p {
-  margin-top: 1.2rem;
+  font-size: 0.9rem;
 }
 @keyframes moveGradient {
   50% {
@@ -688,9 +689,8 @@ footer .footer-flex-container .contact-icons span span {
     margin-top: 0.5rem;
   }
   .sec-1 {
-    margin-top: 1rem;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 216px 1fr;
   }
   .sec-1 .bio h1 {
     font-size: 2.3rem;
@@ -778,6 +778,40 @@ footer .footer-flex-container .contact-icons span span {
   .line-right {
     left: 0;
     width: 3px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .sec-1 {
+    display: grid;
+    grid-template-columns: 182px 1fr;
+  }
+}
+@media screen and (max-width: 382px) {
+  .sec-1 {
+    display: grid;
+    grid-template-columns: 182px 1fr;
+  }
+  .sec-1 img {
+    width: 139px !important;
+    height: 139px !important;
+  }
+}
+@media screen and (max-width: 350px) {
+  .sec-1 {
+    grid-template-columns: 172px 1fr;
+  }
+  .sec-1 img {
+    width: 129px !important;
+    height: 129px !important;
+  }
+}
+@media screen and (max-width: 320px) {
+  .sec-1 {
+    grid-template-columns: 155px 1fr;
+  }
+  .sec-1 img {
+    width: 129px !important;
+    height: 129px !important;
   }
 }
 @media screen and (max-width: 570px) {
