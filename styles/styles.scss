@@ -176,20 +176,24 @@ section {
                 background-color: var(--white);
                 position: absolute;
                 left: -5px;
-                top: 15%;
+                top: 16%;
                 border-radius: 50%;
             }
             .dot-2 {
                 @extend .dot-1;
-                top: 50%;
+                top: 40%;
             }
             .dot-3 {
                 @extend .dot-1;
-                top: 80%;
+                top: 64%;
             }
             .dot-4 {
                 @extend .dot-1;
-                top: 48%;
+                top: 87%;
+            }
+            .dot-5 {
+                @extend .dot-1;
+                top: 56%;
             }
         }
         .card-wrapper:after {
