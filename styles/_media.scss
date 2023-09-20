@@ -29,12 +29,28 @@
 
 @media screen and (min-width: 2200px) {
     .sec-1 {
+        .bio {
+            padding-right: 3rem;
+        }
         .pfp-wrapper {
             img {
                 transform: scale(1.8);
             }
             margin-right: 5rem;
             margin-top: 4rem;
+        }
+    }
+    .sec-2 {
+        .skills-div {
+            .skills-pack {
+                p {
+                    font-size: 22px;
+                }
+                img {
+                    width: 90px;
+                    height: 90px;
+                }
+            }
         }
     }
     html {

@@ -616,12 +616,22 @@ footer .footer-flex-container .contact-icons span span {
   }
 }
 @media screen and (min-width: 2200px) {
+  .sec-1 .bio {
+    padding-right: 3rem;
+  }
   .sec-1 .pfp-wrapper {
     margin-right: 5rem;
     margin-top: 4rem;
   }
   .sec-1 .pfp-wrapper img {
     transform: scale(1.8);
+  }
+  .sec-2 .skills-div .skills-pack p {
+    font-size: 22px;
+  }
+  .sec-2 .skills-div .skills-pack img {
+    width: 90px;
+    height: 90px;
   }
   html {
     font-size: 1.9rem;
