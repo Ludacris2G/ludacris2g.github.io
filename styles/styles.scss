@@ -64,6 +64,7 @@ nav {
     h1 {
         color: var(--white);
         display: none;
+        user-select: none;
     }
     ul {
         display: flex;
@@ -251,6 +252,7 @@ section {
         }
     }
     .pfp-wrapper {
+        user-select: none;
           @keyframes moveGradient {
             50% {
               background-position: 100% 50%;
@@ -271,6 +273,7 @@ section {
         grid-gap: 20px;
         grid-template-columns: repeat(4, 1fr);
         padding-top: 20px;
+        user-select: none;
         img {
             width: 60px;
             height: 60px;
@@ -318,7 +321,84 @@ section {
     }
 }
 
-.sec-5 {
+// SCROLL EFFECTS ==================================
+
+// projects
+.project-div-hidden {
+    opacity: 0 !important;
+    transition: all 1.3s !important;
+    transform: translateX(-20px) !important;
+}
+
+.project-div-show {
+    opacity: 1 !important; 
+    transform: translateX(0px) !important;
+}
+
+// skills
+.skills-pack-hidden {
+    opacity: 0 !important;
+    transition: all .5s !important;
+    transform: translateY(80px) !important;
+}
+
+.skills-pack-show {
+    opacity: 1 !important; 
+    transform: translateY(0px) !important;
+}
+
+// bio text
+.bio-text-hidden {
+    opacity: 0 !important;
+    // transition: all 1s ease-in-out !important;
+    transform: translateX(-100px) !important;
+    display: inline-block;
+}
+
+.bio-text-show {
+    opacity: 1 !important; 
+    transform: translateY(0px) !important;
+}
+
+// icons
+.small-icon-hidden {
+    opacity: 0 !important;
+    transition: all 1s !important;
+    transform: translateX(-60px) !important;
+}
+
+.small-icon-show {
+    opacity: 1 !important; 
+    transform: translateX(0px) !important;
+}
+// info
+.info-hidden {
+    opacity: 0 !important;
+    transition: all 1s !important;
+    transform: translateX(200px) !important;
+}
+
+.info-show {
+    opacity: 1 !important; 
+    transform: translateX(0px) !important;
+}
+
+// languages
+.languages-container-hidden {
+    opacity: 0 !important;
+    filter: blur(10px);
+    transition: all 1s !important;
+    transform: translateY(20px) !important;
+}
+
+.languages-container-show {
+    opacity: 1 !important; 
+    transform: translateY(0px) !important;
+    filter: blur(0);
+}
+// ==============================================
+
+.sec-4 {
     .languages-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -376,7 +456,7 @@ section {
     }
 }
 
-.sec-6 {
+.sec-3 {
     .project-container {
         position: relative;
         display: flex;

@@ -54,6 +54,9 @@ nav {
 nav h1 {
   color: var(--white);
   display: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 nav ul {
   display: flex;
@@ -231,6 +234,11 @@ section .experience-div .card-wrapper:hover:after {
 .sec-1 .bio .description-p {
   font-size: 0.9rem;
 }
+.sec-1 .pfp-wrapper {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
 @keyframes moveGradient {
   50% {
     background-position: 100% 50%;
@@ -249,6 +257,9 @@ section .experience-div .card-wrapper:hover:after {
   grid-gap: 20px;
   grid-template-columns: repeat(4, 1fr);
   padding-top: 20px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .sec-2 .skills-div img {
   width: 60px;
@@ -296,41 +307,109 @@ section .experience-div .card-wrapper:hover:after {
   text-align: center;
 }
 
-.sec-5 .languages-container {
+.project-div-hidden {
+  opacity: 0 !important;
+  transition: all 1.3s !important;
+  transform: translateX(-20px) !important;
+}
+
+.project-div-show {
+  opacity: 1 !important;
+  transform: translateX(0px) !important;
+}
+
+.skills-pack-hidden {
+  opacity: 0 !important;
+  transition: all 0.5s !important;
+  transform: translateY(80px) !important;
+}
+
+.skills-pack-show {
+  opacity: 1 !important;
+  transform: translateY(0px) !important;
+}
+
+.bio-text-hidden {
+  opacity: 0 !important;
+  transform: translateX(-100px) !important;
+  display: inline-block;
+}
+
+.bio-text-show {
+  opacity: 1 !important;
+  transform: translateY(0px) !important;
+}
+
+.small-icon-hidden {
+  opacity: 0 !important;
+  transition: all 1s !important;
+  transform: translateX(-60px) !important;
+}
+
+.small-icon-show {
+  opacity: 1 !important;
+  transform: translateX(0px) !important;
+}
+
+.info-hidden {
+  opacity: 0 !important;
+  transition: all 1s !important;
+  transform: translateX(200px) !important;
+}
+
+.info-show {
+  opacity: 1 !important;
+  transform: translateX(0px) !important;
+}
+
+.languages-container-hidden {
+  opacity: 0 !important;
+  filter: blur(10px);
+  transition: all 1s !important;
+  transform: translateY(20px) !important;
+}
+
+.languages-container-show {
+  opacity: 1 !important;
+  transform: translateY(0px) !important;
+  filter: blur(0);
+}
+
+.sec-4 .languages-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 0.4rem;
   border-radius: 5px;
 }
-.sec-5 .languages-container p {
+.sec-4 .languages-container p {
   display: block;
   height: 50px;
   width: 100%;
   padding: 1rem 2rem;
   transition: all 0.4s ease-in-out;
 }
-.sec-5 .languages-container div {
+.sec-4 .languages-container div {
   display: flex;
 }
-.sec-5 .languages-container div:hover .new, .sec-5 .languages-container div:hover .english {
+.sec-4 .languages-container div:hover .new, .sec-4 .languages-container div:hover .english {
   opacity: 1;
   transition: all 0.3s ease-in-out;
 }
-.sec-5 .languages-container div:hover .old {
+.sec-4 .languages-container div:hover .old {
   opacity: 0;
 }
-.sec-5 .languages-container div:hover .new::after, .sec-5 .languages-container div:hover .english::after {
+.sec-4 .languages-container div:hover .new::after, .sec-4 .languages-container div:hover .english::after {
   width: 100px;
 }
-.sec-5 .languages-container div .old {
+.sec-4 .languages-container div .old {
   opacity: 1;
   position: absolute;
 }
-.sec-5 .languages-container div .new, .sec-5 .languages-container div .english {
+.sec-4 .languages-container div .new, .sec-4 .languages-container div .english {
   opacity: 0;
   position: absolute;
 }
-.sec-5 .languages-container div .new:after, .sec-5 .languages-container div .english:after {
+.sec-4 .languages-container div .new:after, .sec-4 .languages-container div .english:after {
   width: 0%;
   height: 2px;
   color: var(--green);
@@ -339,30 +418,30 @@ section .experience-div .card-wrapper:hover:after {
   content: "";
   transition: all 0.2s ease-in-out;
 }
-.sec-5 .languages-container div .english {
+.sec-4 .languages-container div .english {
   opacity: 1;
 }
-.sec-5 .languages-container div .new, .sec-5 .languages-container div .english, .sec-5 .languages-container div .old {
+.sec-4 .languages-container div .new, .sec-4 .languages-container div .english, .sec-4 .languages-container div .old {
   transition: opacity 0.3s linear;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
 }
 
-.sec-6 .project-container {
+.sec-3 .project-container {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.sec-6 .project-container .project-div {
+.sec-3 .project-container .project-div {
   box-shadow: var(--green) 0px 3px 15px 0px;
   margin-top: 3rem;
   border-radius: 0.5rem;
   transition: all 0.3s ease-in-out;
   position: relative;
 }
-.sec-6 .project-container .project-div .links {
+.sec-3 .project-container .project-div .links {
   display: flex;
   justify-content: center;
   position: absolute;
@@ -373,8 +452,8 @@ section .experience-div .card-wrapper:hover:after {
   transition: all 0.3s ease;
   z-index: -1;
 }
-.sec-6 .project-container .project-div .links .live-link,
-.sec-6 .project-container .project-div .links .code-link {
+.sec-3 .project-container .project-div .links .live-link,
+.sec-3 .project-container .project-div .links .code-link {
   display: inline-block;
   margin: 0 25px;
   padding: 9px 15px;
@@ -386,41 +465,41 @@ section .experience-div .card-wrapper:hover:after {
   transition: all 0.3s ease;
   box-shadow: inset 0 0 0 1px #555;
 }
-.sec-6 .project-container .project-div .links .live-link:hover,
-.sec-6 .project-container .project-div .links .code-link:hover {
+.sec-3 .project-container .project-div .links .live-link:hover,
+.sec-3 .project-container .project-div .links .code-link:hover {
   background-color: #333;
   box-shadow: inset 0 0 0 2px var(--green);
 }
-.sec-6 .project-container .project-div .for-link {
+.sec-3 .project-container .project-div .for-link {
   width: 100%;
   height: 100%;
   padding: 0.5rem 0.5rem;
   position: relative;
   transition: all 0.3s ease-in-out;
 }
-.sec-6 .project-container .project-div .for-link .project-text {
+.sec-3 .project-container .project-div .for-link .project-text {
   padding: 6px 6px;
 }
-.sec-6 .project-container .project-div .for-link .project-text p {
+.sec-3 .project-container .project-div .for-link .project-text p {
   margin-top: 8px;
 }
-.sec-6 .project-container .project-div img {
+.sec-3 .project-container .project-div img {
   width: 100%;
   border-radius: 0.5rem;
 }
-.sec-6 .project-container .project-div a {
+.sec-3 .project-container .project-div a {
   color: var(--white);
 }
-.sec-6 .project-container .project-div p {
+.sec-3 .project-container .project-div p {
   color: var(--gray);
 }
-.sec-6 .project-container .project-div:hover {
+.sec-3 .project-container .project-div:hover {
   box-shadow: var(--green) 0px 0px 25px 1px;
 }
-.sec-6 .project-container .project-div:hover .for-link {
+.sec-3 .project-container .project-div:hover .for-link {
   filter: blur(5px);
 }
-.sec-6 .project-container .project-div:hover .links {
+.sec-3 .project-container .project-div:hover .links {
   opacity: 1;
   z-index: 100;
 }
