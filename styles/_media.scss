@@ -64,6 +64,13 @@
             margin-right: 1rem;
         }
     }
+    .sec-4 {
+        .languages-container {
+            p {
+                padding: 2rem 2rem;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -146,6 +153,13 @@
             img {
                 width: 150px;
                 height: 150px;
+            }
+        }
+    }
+    .sec-4 {
+        .languages-container {
+            p {
+                padding: 1rem 0.8rem;
             }
         }
     }

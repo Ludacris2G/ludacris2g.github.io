@@ -721,6 +721,9 @@ footer .footer-flex-container .contact-icons span span {
   .buttons button {
     margin-right: 1rem;
   }
+  .sec-4 .languages-container p {
+    padding: 2rem 2rem;
+  }
 }
 @media screen and (max-width: 1000px) {
   .sec-1 .pfp-wrapper img {
@@ -785,6 +788,9 @@ footer .footer-flex-container .contact-icons span span {
   .sec-1 .pfp-wrapper img {
     width: 150px;
     height: 150px;
+  }
+  .sec-4 .languages-container p {
+    padding: 1rem 0.8rem;
   }
 }
 @media screen and (max-width: 450px) {
