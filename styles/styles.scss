@@ -364,7 +364,7 @@ section {
 .small-icon-hidden {
     opacity: 0 !important;
     transition: all 1s !important;
-    transform: translateX(-60px) !important;
+    transform: translateX(-20px) !important;
 }
 
 .small-icon-show {
@@ -375,7 +375,7 @@ section {
 .info-hidden {
     opacity: 0 !important;
     transition: all 1s !important;
-    transform: translateX(200px) !important;
+    transform: translateX(20px) !important;
 }
 
 .info-show {
