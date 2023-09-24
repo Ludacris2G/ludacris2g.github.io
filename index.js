@@ -40,10 +40,39 @@ darkModeBtn.addEventListener('click', function () {
   moon.classList.toggle('moon');
 });
 
-// document.onload = () => {
-//   scrollToTop();
-// }
+// SCROLL EFFECT - og code mf
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      const target = entry.target.classList[0];
 
-// window.onload = function() {
-//   window.scrollTo(0, 0);
-// }
+      if (entry.target.classList.contains('bio-text')) {
+        const randomDuration = (Math.random() * 1.5 + 0.5).toFixed(2) + 's';
+
+        entry.target.style.transition = `all ${randomDuration}`;
+      }
+
+      entry.target.classList.add(`${target}-show`);
+    }
+    // else {
+    //   const target = entry.target.classList[0];
+    //   entry.target.classList.remove(`${target}-show`);
+    // }
+  });
+});
+
+const projectDivs = document.querySelectorAll('.project-div');
+const skillsPacks = document.querySelectorAll('.skills-pack');
+const bioText = document.querySelectorAll('.bio-text');
+const cardWrapper = document.querySelectorAll('.card-wrapper');
+const smallIcon = document.querySelectorAll('.small-icon');
+const info = document.querySelectorAll('.info');
+const languages = document.querySelectorAll('.languages-container');
+
+projectDivs.forEach((el) => observer.observe(el));
+skillsPacks.forEach((el) => observer.observe(el));
+bioText.forEach((el) => observer.observe(el));
+cardWrapper.forEach((el) => observer.observe(el));
+smallIcon.forEach((el) => observer.observe(el));
+info.forEach((el) => observer.observe(el));
+languages.forEach((el) => observer.observe(el));
