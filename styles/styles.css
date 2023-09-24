@@ -331,7 +331,7 @@ section .experience-div .card-wrapper:hover:after {
 
 .bio-text-hidden {
   opacity: 0 !important;
-  transform: translateX(-100px) !important;
+  transform: translateX(-60px) !important;
   display: inline-block;
 }
 
