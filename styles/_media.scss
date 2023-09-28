@@ -160,6 +160,14 @@
         .languages-container {
             p {
                 padding: 1rem 0.8rem;
+                font-size: 14px;
+            }
+            div {
+                &:hover {
+                    .new::after {
+                        width: 100%;
+                    }
+                }
             }
         }
     }

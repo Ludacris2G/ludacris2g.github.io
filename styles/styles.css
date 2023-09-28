@@ -791,6 +791,10 @@ footer .footer-flex-container .contact-icons span span {
   }
   .sec-4 .languages-container p {
     padding: 1rem 0.8rem;
+    font-size: 14px;
+  }
+  .sec-4 .languages-container div:hover .new::after, .sec-4 .languages-container div:hover .english::after {
+    width: 100%;
   }
 }
 @media screen and (max-width: 450px) {
