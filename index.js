@@ -45,10 +45,9 @@ const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       const target = entry.target.classList[0];
-
-      if (entry.target.classList.contains('bio-text')) {
+       
+      if (entry.target.classList[0] === 'bio-text') {
         const randomDuration = (Math.random() * 1.5 + 0.5).toFixed(2) + 's';
-
         entry.target.style.transition = `all ${randomDuration}`;
       }
 
