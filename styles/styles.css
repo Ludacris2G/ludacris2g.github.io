@@ -271,6 +271,10 @@ section .experience-div .card-wrapper:hover:after {
 .sec-2 .skills-div .github-img {
   filter: invert(100%);
 }
+.sec-2 .skills-div .react-img:hover {
+  transform: rotate(13000deg);
+  transition: all 50s linear;
+}
 .sec-2 .skills-div p {
   border-bottom: 1px solid var(--green);
   padding: 0.5rem 0;

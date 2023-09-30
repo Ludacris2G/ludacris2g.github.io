@@ -283,6 +283,12 @@ section {
         .github-img {
             filter: invert(100%);
         }
+        .react-img {
+            &:hover {
+                transform: rotate(13000deg);
+                transition: all 50s linear;
+            }
+        }
         p {
             border-bottom: 1px solid var(--green);
             padding: .5rem 0;
