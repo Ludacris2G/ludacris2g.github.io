@@ -222,6 +222,7 @@ section {
             font-size: 3rem;
         }
         p {
+            text-align: left;
             margin-top: 1.2rem;
             font-size: 1rem;
             span {
@@ -477,10 +478,7 @@ section {
             .links {
                 display: flex;
                 justify-content: center;        
-                position: absolute; 
-                top: 50%; 
-                left: 50%;
-                transform: translate(-50%, -50%); 
+                margin-bottom: 1rem;
                 opacity: 0; 
                 transition: all 0.3s ease; 
                 z-index: -1;
@@ -516,6 +514,54 @@ section {
                     }
                 }
             }
+            .hover-text-div {
+                justify-content: center;        
+                opacity: 0; 
+                transition: all 0.3s ease; 
+                z-index: -1;
+                flex-grow: 1;
+                display: flex;
+                align-items: center;
+                padding: 0 1rem 0 1rem;
+                height: 50%;
+                padding: 1rem;
+                .app-description {
+                    text-align: center;
+                    max-height: 100%;
+                    background-color: rgb(12 11 11 / 50%);
+                    padding: .2rem .5rem;
+                    border-radius: 10px;
+                    // SCROLLBAR
+                    overflow: scroll;
+                    -ms-overflow-style: none;  /* IE and Edge */
+                    scrollbar-width: none;  /* Firefox */
+                    &::-webkit-scrollbar {
+                        display: none; /* chrome, safari, opera */
+                    }
+                }
+                p {
+                    color: var(--white);
+                    padding: .2rem .1rem;
+                    max-height: 100%;
+                    margin-right: auto;
+                    margin-left: auto;
+                    text-align: left;
+                    margin-bottom: .5rem;
+                }
+                h1 {
+                    font-size: 1rem;
+                    color: var(--green);
+                    margin-bottom: .1rem;
+                }
+            }
+            .project-onhover-div {
+                display: flex;
+                flex-direction: column;
+                position: absolute; 
+                height: 100%;
+                width: 100%;
+                max-height: 100%;
+            }
             img {
                 width: 100%;
                 border-radius: .5rem;
@@ -534,6 +580,10 @@ section {
                 .links {
                     opacity: 1;
                     z-index: 100;
+                }
+                .hover-text-div {
+                    opacity: 1;
+                    z-index: 101;
                 }
             }
         }

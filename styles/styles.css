@@ -208,6 +208,7 @@ section .experience-div .card-wrapper:hover:after {
   font-size: 3rem;
 }
 .sec-1 .bio p {
+  text-align: left;
   margin-top: 1.2rem;
   font-size: 1rem;
 }
@@ -448,10 +449,7 @@ section .experience-div .card-wrapper:hover:after {
 .sec-3 .project-container .project-div .links {
   display: flex;
   justify-content: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin-bottom: 1rem;
   opacity: 0;
   transition: all 0.3s ease;
   z-index: -1;
@@ -487,6 +485,53 @@ section .experience-div .card-wrapper:hover:after {
 .sec-3 .project-container .project-div .for-link .project-text p {
   margin-top: 8px;
 }
+.sec-3 .project-container .project-div .hover-text-div {
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: -1;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem 0 1rem;
+  height: 50%;
+  padding: 1rem;
+}
+.sec-3 .project-container .project-div .hover-text-div .app-description {
+  text-align: center;
+  max-height: 100%;
+  background-color: rgba(12, 11, 11, 0.5);
+  padding: 0.2rem 0.5rem;
+  border-radius: 10px;
+  overflow: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.sec-3 .project-container .project-div .hover-text-div .app-description::-webkit-scrollbar {
+  display: none; /* chrome, safari, opera */
+}
+.sec-3 .project-container .project-div .hover-text-div p {
+  color: var(--white);
+  padding: 0.2rem 0.1rem;
+  max-height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+.sec-3 .project-container .project-div .hover-text-div h1 {
+  font-size: 1rem;
+  color: var(--green);
+  margin-bottom: 0.1rem;
+}
+.sec-3 .project-container .project-div .project-onhover-div {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  max-height: 100%;
+}
 .sec-3 .project-container .project-div img {
   width: 100%;
   border-radius: 0.5rem;
@@ -506,6 +551,10 @@ section .experience-div .card-wrapper:hover:after {
 .sec-3 .project-container .project-div:hover .links {
   opacity: 1;
   z-index: 100;
+}
+.sec-3 .project-container .project-div:hover .hover-text-div {
+  opacity: 1;
+  z-index: 101;
 }
 
 footer .footer-flex-container {
@@ -752,6 +801,8 @@ footer .footer-flex-container .contact-icons span span {
     position: absolute;
     left: 0;
     top: 10px;
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
   }
   nav ul {
     display: none;
