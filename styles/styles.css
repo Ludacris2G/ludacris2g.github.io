@@ -205,7 +205,7 @@ section .experience-div .card-wrapper:hover:after {
 }
 .sec-1 .bio h1 {
   color: var(--green);
-  font-size: 3rem;
+  font-size: 4.5rem;
 }
 .sec-1 .bio p {
   text-align: left;
@@ -782,6 +782,9 @@ footer .footer-flex-container .contact-icons span span {
   .sec-1 .pfp-wrapper img {
     width: 180px;
     height: 180px;
+  }
+  .sec-1 .bio h1 {
+    font-size: 3.7rem;
   }
 }
 @media screen and (max-width: 850px) {
