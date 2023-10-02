@@ -5,15 +5,47 @@
   --button-background: #1e1e1e;
   --gray: #b6b6b6;
   --transition: all 0.3s ease-in-out;
+  --nav-button-background: rgba(62, 62, 62, 0.2588235294);
   scroll-behavior: smooth;
+  --github-filter-invert: invert(100%);
+  --styled-components-img-filter: brightness(1);
+  --faded-gray: #858585;
+  --app-description-background: rgba(12, 11, 11, 0.5019607843);
+  --project-button-hover: #333;
+  --project-button-text: #7aea29;
+  --exp-secondary-faded-text: #b6b6b6;
+  --exp-dots: #ffffff;
+  --icons-outline: none;
+  --neon-button-hover-before-opacity: 1;
+  --neon-button-before-opacity: 0.7;
+  --neon-box-shadow: inset 0 0 0.5em 0 var(--green), 0 0 0.5em 0 var(--green);
+  --neon-text-shadow: 0 0 0.125em rgba(255, 255, 255, 0.3019607843), 0 0 0.45em var(--green);
+  --neon-box-shadow-after: 0 0 2em 0.5em var(--green);
+  --line-background: rgba(255, 255, 255, 0.1019607843);
 }
 
 .light-mode {
-  --background-black: #20227a;
-  --white: rgb(232, 230, 230);
-  --green: #35e9cb;
-  --button-background: #0b1125a3;
-  --gray: #96ffb4;
+  --background-black: #F9F5EB;
+  --white: #000000;
+  --green: #002B5B;
+  --button-background: #1e1e1e;
+  --gray: #b6b6b6;
+  --github-filter-invert: invert(0%);
+  --styled-components-img-filter: brightness(.8);
+  --faded-gray: #858585;
+  --app-description-background: #f9f5ebbd;
+  --project-button-hover: var(--green);
+  --project-button-text: #fff;
+  --exp-secondary-faded-text: #000000b5;
+  --exp-dots: var(--green);
+  --icons-outline: 1px solid black;
+  --neon-button-hover-before-opacity: 0;
+  --neon-button-before-opacity: 0;
+  --button-background: #fff;
+  --neon-box-shadow: none;
+  --neon-text-shadow: none;
+  --neon-box-shadow-after: none;
+  --line-background: #4242421a;
 }
 
 * {
@@ -71,7 +103,7 @@ nav ul li {
   height: 42px;
 }
 nav ul li:hover {
-  background-color: var(--button-background);
+  background-color: var(--nav-button-background);
   border-radius: 0.3rem;
 }
 nav ul li a {
@@ -88,7 +120,7 @@ nav .buttons {
 nav .buttons button {
   background-color: var(--background-black);
   color: var(--white);
-  height: 45px;
+  height: 42px;
   width: 45px;
   border: none;
   border-radius: 0.5rem;
@@ -96,7 +128,7 @@ nav .buttons button {
   transition: all 0.3s ease-in-out;
 }
 nav .buttons button:hover {
-  background-color: var(--button-background);
+  background-color: var(--nav-button-background);
 }
 nav .buttons button i {
   transform: scale(1.8);
@@ -109,7 +141,7 @@ nav .buttons button .moon {
 }
 nav .buttons a {
   width: 45px;
-  height: 45px;
+  height: 42px;
   background-color: var(--background-black);
   display: flex;
   justify-content: center;
@@ -122,7 +154,7 @@ nav .buttons a i {
   transform: scale(1.3);
 }
 nav .buttons a:hover {
-  background-color: var(--button-background);
+  background-color: var(--nav-button-background);
 }
 
 section {
@@ -136,6 +168,7 @@ section .small-icon {
   width: 80px;
   height: 80px;
   border-radius: 50%;
+  outline: var(--icons-outline);
 }
 section .experience-div {
   position: relative;
@@ -156,11 +189,11 @@ section .experience-div .card .info h3 {
 }
 section .experience-div .card .info h4 {
   font-size: 1rem;
-  color: #b6b6b6;
+  color: var(--exp-secondary-faded-text);
 }
 section .experience-div .card .info p {
   font-size: 0.9rem;
-  color: #b6b6b6;
+  color: var(--exp-secondary-faded-text);
 }
 section .experience-div .card-wrapper {
   border-left: 1px solid var(--green);
@@ -168,7 +201,7 @@ section .experience-div .card-wrapper {
 section .experience-div .card-wrapper .dot-1, section .experience-div .card-wrapper .dot-5, section .experience-div .card-wrapper .dot-4, section .experience-div .card-wrapper .dot-3, section .experience-div .card-wrapper .dot-2 {
   width: 10px;
   height: 10px;
-  background-color: var(--white);
+  background-color: var(--exp-dots);
   position: absolute;
   left: -5px;
   top: 16%;
@@ -215,6 +248,7 @@ section .experience-div .card-wrapper:hover:after {
 }
 .sec-1 .bio p span {
   color: var(--green);
+  font-weight: bolder;
 }
 .sec-1 .bio p a {
   color: var(--gray);
@@ -271,11 +305,14 @@ section .experience-div .card-wrapper:hover:after {
      object-fit: contain;
 }
 .sec-2 .skills-div .github-img {
-  filter: invert(100%);
+  filter: var(--github-filter-invert);
 }
 .sec-2 .skills-div .react-img:hover {
   transform: rotate(13000deg);
   transition: all 50s linear;
+}
+.sec-2 .skills-div .styled-components-img {
+  filter: var(--styled-components-img-filter);
 }
 .sec-2 .skills-div p {
   border-bottom: 1px solid var(--green);
@@ -470,8 +507,9 @@ section .experience-div .card-wrapper:hover:after {
 }
 .sec-3 .project-container .project-div .links .live-link:hover,
 .sec-3 .project-container .project-div .links .code-link:hover {
-  background-color: #333;
+  background-color: var(--project-button-hover);
   box-shadow: inset 0 0 0 2px var(--green);
+  color: var(--project-button-text);
 }
 .sec-3 .project-container .project-div .for-link {
   width: 100%;
@@ -501,7 +539,7 @@ section .experience-div .card-wrapper:hover:after {
 .sec-3 .project-container .project-div .hover-text-div .app-description {
   text-align: center;
   max-height: 100%;
-  background-color: rgba(12, 11, 11, 0.5);
+  background-color: var(--app-description-background);
   padding: 0.2rem 0.5rem;
   border-radius: 10px;
   overflow: scroll;
@@ -541,7 +579,7 @@ section .experience-div .card-wrapper:hover:after {
   color: var(--white);
 }
 .sec-3 .project-container .project-div p {
-  color: var(--gray);
+  color: var(--faded-gray);
 }
 .sec-3 .project-container .project-div:hover {
   box-shadow: var(--green) 0px 0px 25px 1px;
@@ -587,8 +625,8 @@ footer .footer-flex-container .contact-icons span span {
   position: relative;
   color: var(--green);
   border: var(--green) 0.125em solid;
-  text-shadow: 0 0 0.125em hsla(0, 0%, 100%, 0.3), 0 0 0.45em var(--green);
-  box-shadow: inset 0 0 0.5em 0 var(--green), 0 0 0.5em 0 var(--green);
+  text-shadow: var(--neon-text-shadow);
+  box-shadow: var(--neon-box-shadow);
 }
 
 .neon-button::before {
@@ -600,7 +638,7 @@ footer .footer-flex-container .contact-icons span span {
   height: 100%;
   transform: perspective(2.5em) rotateX(45deg) scale(0.8, 0.3);
   filter: blur(1.5em);
-  opacity: 0.7;
+  opacity: var(--neon-button-before-opacity);
   pointer-events: none;
   background: var(--green);
 }
@@ -633,12 +671,12 @@ footer .footer-flex-container .contact-icons span span {
   opacity: 0;
   z-index: -1;
   transition: opacity 100ms linear;
-  box-shadow: 0 0 2em 0.5em var(--green);
+  box-shadow: var(--neon-box-shadow-after);
   background-color: var(--green);
 }
 
 .neon-button:hover::before {
-  opacity: 1;
+  opacity: var(--neon-button-hover-before-opacity);
 }
 
 .neon-button:hover::after {
@@ -683,7 +721,7 @@ footer .footer-flex-container .contact-icons span span {
   height: 100%;
   top: 0;
   left: 19%;
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--line-background);
   overflow: hidden;
 }
 .line-right::after {
@@ -706,7 +744,7 @@ footer .footer-flex-container .contact-icons span span {
   height: 100%;
   top: 0;
   right: 20.5%;
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--line-background);
   overflow: hidden;
 }
 .line-left::after {
