@@ -191,7 +191,7 @@ section {
     .small-icon {
             width: 80px;
             height: 80px;
-            border-radius: 50%;
+            border-radius: 10% !important;
             outline: var(--icons-outline);
     }
     .experience-div {
