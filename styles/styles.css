@@ -720,7 +720,7 @@ footer .footer-flex-container .contact-icons span span {
   width: 2px;
   height: 100%;
   top: 0;
-  left: 19%;
+  left: 20%;
   background: var(--line-background);
   overflow: hidden;
 }
@@ -743,7 +743,7 @@ footer .footer-flex-container .contact-icons span span {
   width: 2px;
   height: 100%;
   top: 0;
-  right: 20.5%;
+  right: 20%;
   background: var(--line-background);
   overflow: hidden;
 }
@@ -871,7 +871,7 @@ footer .footer-flex-container .contact-icons span span {
     font-size: 1.8rem;
   }
   .line-left {
-    right: 8%;
+    right: 6%;
   }
   .line-right {
     left: 6%;
