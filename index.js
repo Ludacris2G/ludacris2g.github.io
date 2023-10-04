@@ -1,11 +1,7 @@
 const buttons = document.querySelectorAll('.neon-button');
 const darkModeBtn = document.querySelector('#dark-mode');
 const linkedinText = document.getElementById('email').innerText;
-// const scrollToTop
-
-// const scrollToTop = () => {
-//   window.scrollTo(0, 0);
-// };
+const scrollToTopBtn = document.getElementById('back-to-top-btn');
 
 const copyContent = async () => {
   try {
@@ -45,7 +41,7 @@ const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       const target = entry.target.classList[0];
-       
+
       if (entry.target.classList[0] === 'bio-text') {
         const randomDuration = (Math.random() * 1.5 + 0.5).toFixed(2) + 's';
         entry.target.style.transition = `all ${randomDuration}`;
@@ -53,10 +49,6 @@ const observer = new IntersectionObserver((entries) => {
 
       entry.target.classList.add(`${target}-show`);
     }
-    // else {
-    //   const target = entry.target.classList[0];
-    //   entry.target.classList.remove(`${target}-show`);
-    // }
   });
 });
 
@@ -75,3 +67,25 @@ cardWrapper.forEach((el) => observer.observe(el));
 smallIcon.forEach((el) => observer.observe(el));
 info.forEach((el) => observer.observe(el));
 languages.forEach((el) => observer.observe(el));
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 200 ||
+    document.documentElement.scrollTop > 200
+  ) {
+    scrollToTopBtn.style.transform = 'translateY(0)';
+  } else {
+    scrollToTopBtn.style.transform = 'translateY(100px)';
+  }
+}
+
+function scrollToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+scrollToTopBtn.addEventListener('click', scrollToTop);
