@@ -2,6 +2,7 @@
   --background-black: #121212;
   --white: #ffffff;
   --green: #7aea29;
+  --greener: #397f07;
   --button-background: #1e1e1e;
   --gray: #b6b6b6;
   --transition: all 0.3s ease-in-out;
@@ -22,12 +23,14 @@
   --neon-text-shadow: 0 0 0.125em rgba(255, 255, 255, 0.3019607843), 0 0 0.45em var(--green);
   --neon-box-shadow-after: 0 0 2em 0.5em var(--green);
   --line-background: rgba(255, 255, 255, 0.1019607843);
+  --back-to-top-btn-hover: #7aea29;
 }
 
 .light-mode {
   --background-black: #F9F5EB;
   --white: #000000;
   --green: #002B5B;
+  --greener: #002B5B;
   --button-background: #1e1e1e;
   --gray: #b6b6b6;
   --github-filter-invert: invert(0%);
@@ -46,6 +49,7 @@
   --neon-text-shadow: none;
   --neon-box-shadow-after: none;
   --line-background: #4242421a;
+  --back-to-top-btn-hover: #265891;
 }
 
 * {
@@ -759,6 +763,44 @@ footer .footer-flex-container .contact-icons span span {
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
   animation-delay: 2s;
+}
+
+#back-to-top-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 100;
+  border: none;
+  background-color: transparent;
+  height: 35px;
+  width: 40px;
+  overflow: hidden;
+  padding-top: 5px;
+  transition: all 0.3s ease-in-out;
+  transform: translateY(100px);
+}
+#back-to-top-btn:hover {
+  cursor: pointer;
+}
+#back-to-top-btn:hover .first-arrow,
+#back-to-top-btn:hover .second-arrow {
+  border-left: 5px solid var(--back-to-top-btn-hover);
+  border-top: 5px solid var(--back-to-top-btn-hover);
+}
+#back-to-top-btn .first-arrow, #back-to-top-btn .second-arrow {
+  transition: 0.2s all ease-in-out;
+  border-left: 5px solid var(--greener);
+  border-top: 5px solid var(--greener);
+  transform: rotate(45deg);
+  height: 18px;
+  width: 18px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: -5px;
+}
+#back-to-top-btn .second-arrow {
+  margin-bottom: 0;
 }
 
 @keyframes drop {
