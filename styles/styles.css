@@ -27,14 +27,14 @@
 }
 
 .light-mode {
-  --background-black: #F9F5EB;
+  --background-black: #f9f5eb;
   --white: #000000;
-  --green: #002B5B;
-  --greener: #002B5B;
+  --green: #002b5b;
+  --greener: #002b5b;
   --button-background: #1e1e1e;
   --gray: #b6b6b6;
   --github-filter-invert: invert(0%);
-  --styled-components-img-filter: brightness(.8);
+  --styled-components-img-filter: brightness(0.8);
   --faded-gray: #858585;
   --app-description-background: #f9f5ebbd;
   --project-button-hover: var(--green);
@@ -164,6 +164,19 @@ nav .buttons a:hover {
 section {
   padding: 3% 0.4rem !important;
   width: 100%;
+}
+section .other-p {
+  margin-top: 1rem;
+}
+section .other-link {
+  text-wrap: wrap;
+  margin-top: 0.3rem;
+}
+section .other-link:hover {
+  color: var(--green) !important;
+}
+section .other-link:visited {
+  color: var(--white);
 }
 section h1 {
   font-size: 2rem;
@@ -468,7 +481,8 @@ section .experience-div .card-wrapper:hover:after {
 .sec-4 .languages-container div .english {
   opacity: 1;
 }
-.sec-4 .languages-container div .new, .sec-4 .languages-container div .english, .sec-4 .languages-container div .old {
+.sec-4 .languages-container div .new, .sec-4 .languages-container div .english,
+.sec-4 .languages-container div .old {
   transition: opacity 0.3s linear;
   -webkit-user-select: none;
      -moz-user-select: none;

@@ -190,6 +190,19 @@ nav {
 section {
   padding: 3% 0.4rem !important;
   width: 100%;
+  .other-p {
+    margin-top: 1rem;
+  }
+  .other-link {
+    text-wrap: wrap;
+    margin-top: 0.3rem;
+    &:hover {
+      color: var(--green) !important;
+    }
+    &:visited {
+      color: var(--white);
+    }
+  }
   h1 {
     font-size: 2rem;
   }
