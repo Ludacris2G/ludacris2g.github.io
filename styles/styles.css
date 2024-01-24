@@ -215,26 +215,29 @@ section .experience-div .card .info p {
 section .experience-div .card-wrapper {
   border-left: 1px solid var(--green);
 }
-section .experience-div .card-wrapper .dot-1, section .experience-div .card-wrapper .dot-5, section .experience-div .card-wrapper .dot-4, section .experience-div .card-wrapper .dot-3, section .experience-div .card-wrapper .dot-2 {
+section .experience-div .card-wrapper .dot-1, section .experience-div .card-wrapper .dot-6, section .experience-div .card-wrapper .dot-5, section .experience-div .card-wrapper .dot-4, section .experience-div .card-wrapper .dot-3, section .experience-div .card-wrapper .dot-2 {
   width: 10px;
   height: 10px;
   background-color: var(--exp-dots);
   position: absolute;
   left: -5px;
-  top: 16%;
+  top: 34%;
   border-radius: 50%;
 }
 section .experience-div .card-wrapper .dot-2 {
-  top: 40%;
+  top: 55%;
 }
 section .experience-div .card-wrapper .dot-3 {
-  top: 64%;
+  top: 73%;
 }
 section .experience-div .card-wrapper .dot-4 {
-  top: 87%;
+  top: 91%;
 }
 section .experience-div .card-wrapper .dot-5 {
   top: 56%;
+}
+section .experience-div .card-wrapper .dot-6 {
+  top: 13%;
 }
 section .experience-div .card-wrapper:after {
   transition: all ease-in-out 0.3s;
