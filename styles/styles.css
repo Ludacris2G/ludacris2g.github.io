@@ -211,6 +211,7 @@ section .experience-div .card .info h4 {
 section .experience-div .card .info p {
   font-size: 0.9rem;
   color: var(--exp-secondary-faded-text);
+  text-align: justify;
 }
 section .experience-div .card-wrapper {
   border-left: 1px solid var(--green);
